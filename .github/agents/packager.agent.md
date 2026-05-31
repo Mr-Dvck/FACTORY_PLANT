@@ -38,7 +38,7 @@ You assemble the handoff. Every agent's output becomes a clean, discoverable pro
 3. Write README with: what it is, how it works, how to deploy, revenue model, security
 4. Write QUICKSTART: 5-minute path from zero to running
 5. Include project.json with full pipeline manifest
-6. Save to `content/packaged/[project-name]/`
+6. Save to `z_FACTORIES/NN_[project-name]/`
 
 ## Forbidden
 - ❌ Never ship without README + QUICKSTART

@@ -17,7 +17,7 @@ User says "make something" or "create a post" — you run the entire architectur
 3. If Reality Gate fails entirely (nothing salvageable), return to step 1 with a different creativity mode.
 4. Load `master_ai_prompt_engineering_skill.md` — structure as deployable prompt/spec
 5. Apply **Bootstrap Gate** — verify the Bootstrap Prompt is complete and executable
-6. Save to `content/drafts/[slug]_FACTORY.md`
+6. Save to `z_FACTORIES/NN_[slug]_FACTORY.md`
 7. Report: title, file path, word count, gate results, next steps
 
 **User sees only:** the final output + summary. Not the intermediate stages.
@@ -141,7 +141,7 @@ Checklist. All must pass. If not, auto-fix what you can, flag what you can't.
 - Load order: Automation Expert → Orchestrator → Individual Skills
 - The Automation Expert decides WHICH orchestrator stages to run and in what order.
 - In Full Auto mode, the user never sees intermediate skill loading — only the result.
-- All gate decisions are logged to `content/drafts/[slug]_audit.md` for transparency.
+- All gate decisions are logged to `z_FACTORIES/NN_[slug]_audit.md` for transparency.
 
 ## Forbidden
 - ❌ Never ask the user "should I proceed to the next stage?" in Full Auto mode

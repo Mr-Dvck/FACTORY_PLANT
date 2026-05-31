@@ -142,7 +142,7 @@ Coordinator (Parallel Phases + Context Passing)
 Reality ✅ | Income ✅ | Bootstrap ✅
 │
 ▼
-[SLUG]_FACTORY.md delivered in content/packaged/[slug]/
+[SLUG]_FACTORY.md delivered in z_FACTORIES/NN_[slug]/
 ```
 
 **On any failure at any stage → immediate Counsel Mode + Recovery Triad.**

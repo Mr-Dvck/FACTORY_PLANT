@@ -126,12 +126,12 @@ Before proceeding, verify:
 
 **This is the FINAL stage. Deployed after both gates pass.**
 
-The Packager assembles all files into a clean project folder, writes README + QUICKSTART + ARCHITECTURE + project.json manifest, and saves to `content/packaged/[project-name]/`.
+The Packager assembles all files into a clean Factory folder, writes README + QUICKSTART + ARCHITECTURE + project.json manifest, and saves to `z_FACTORIES/NN_[project-name]/`.
 **Invoke:** `skills/deep_research_skill.md`
 
 **Action:** Load the deep research skill prompt. If DeepSeek API key is set, call the API with this system prompt + the user's topic. If no API key, print the prompt for manual use.
 
-**Output:** A complete research brief saved to `content/drafts/[slug]_research.md` with:
+**Output:** A complete research brief saved to `z_FACTORIES/NN_[slug]_research.md` with:
 - Executive summary
 - Key statistics (with sources and dates)
 - Competitive landscape matrix
@@ -159,7 +159,7 @@ The Packager assembles all files into a clean project folder, writes README + QU
 
 **Action:** Combine the research brief + chosen hook + AetherPrompt vΩ template. Generate the complete article.
 
-**Output:** A full article in `content/drafts/[slug].md` with:
+**Output:** A full output in `z_FACTORIES/NN_[slug].md` with:
 - YAML frontmatter (title, description, tags, date, status)
 - Overview section
 - The Public Hook (using the chosen hook variant)
@@ -212,7 +212,7 @@ The Packager assembles all files into a clean project folder, writes README + QU
 - `POST /posts` with article data
 - If status=publish: `POST /posts/{id}/publish`
 - Log publication to `data/published.json`
-- Move file to `content/published/`
+- Move file to `z_FACTORIES/`
 - Display success report with live URL and onchain reference.
 
 ## COPILOT MODE: In-Editor Assistance

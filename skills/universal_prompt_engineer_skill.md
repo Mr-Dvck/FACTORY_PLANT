@@ -110,7 +110,7 @@ Always end with: `AETHERPROMPT_COMPLETE`
 ## Integration Notes
 - This skill is invoked by `content_orchestrator_skill.md` as step 3 of the pipeline.
 - Reads the research brief from step 1 and hook choice from step 2.
-- Output is saved to `content/drafts/[slug].md`.
+- Output is saved to `z_FACTORIES/NN_[slug].md`.
 - The SEO Optimizer skill reads this output as input for step 4.
 
 ---

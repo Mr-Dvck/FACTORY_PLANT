@@ -96,7 +96,7 @@ The Coordinator:
 3. Applies the Reality Gate (using Gatekeeper's audit)
 4. Applies the Bootstrap Gate
 5. If either gate fails → identify the failing agent → redeploy that agent with fix instructions → re-merge
-6. If both gates pass → save to `content/drafts/`
+6. If both gates pass → save to `z_FACTORIES/`
 
 ### Phase 4: Report
 ```
@@ -104,7 +104,7 @@ The Coordinator:
 │              ✅ Multi-Agent Team — Task Complete             │
 │─────────────────────────────────────────────────────────────│
 │  Architecture:  [title]                                     │
-│  Saved to:      content/drafts/[slug].md                    │
+│  Saved to:      z_FACTORIES/NN_[slug].md                    │
 │  Word count:    [N]                                        │
 │─────────────────────────────────────────────────────────────│
 │  Agent Contributions:                                       │

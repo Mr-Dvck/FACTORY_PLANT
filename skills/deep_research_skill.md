@@ -94,7 +94,7 @@ Given a topic, produce a **Research Brief** that is:
 
 ## Integration Notes
 - This skill is invoked by `content_orchestrator_skill.md` as step 1 of the content pipeline.
-- The research brief is saved to `content/drafts/[slug]_research.md`.
+- The research brief is saved to `z_FACTORIES/NN_[slug]_research.md`.
 - The Universal Prompt Engineer skill reads this brief as input.
 - If DeepSeek API key is set, the Python script calls DeepSeek with this exact system prompt.
 - If no API key, this prompt is printed for manual use.

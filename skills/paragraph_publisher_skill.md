@@ -121,14 +121,14 @@ On Error: Report error with details, suggest fixes
 ```
 Method: POST /posts/{id}/publish
 Body: {crosspost_farcaster, email_blast}
-On Success: Move article from content/drafts/ to content/published/
+On Success: Move output from `z_FACTORIES/` staging to final location
             Append to data/published.json log
             Report live URL and onchain reference
 ```
 
 ### Step 4: Post-Publish Actions
 - Save publication log entry to `data/published.json`
-- Optionally move the .md file from `content/drafts/` to `content/published/`
+- Optionally move the .md file from `z_FACTORIES/` to its final location
 - Report the live URL for sharing
 - Display the transaction hash for onchain verification
 
@@ -158,8 +158,8 @@ On Success: Move article from content/drafts/ to content/published/
     "status": "published",
     "tags": ["ethereum", "zk"],
     "published_at": "2026-05-28T12:05:00Z",
-    "draft_file": "content/drafts/article-slug.md",
-    "published_file": "content/published/article-slug.md"
+    "draft_file": "z_FACTORIES/NN_[slug].md",,
+    "published_file": "z_FACTORIES/NN_[slug].md"
   }
 ]
 ```

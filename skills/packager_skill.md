@@ -173,7 +173,7 @@ And produces:
 ## Packaging Rules
 
 ### Rule 1: Zero Loose Files
-Every file the Bootstrap Prompt generates goes into the project folder. No file is left in `content/drafts/` without being included in the packaged project.
+Every file the Bootstrap Prompt generates goes into the Factory folder. No file is left in `z_FACTORIES/` without being included in the packaged Factory.
 
 ### Rule 2: Paths are Absolute in Instructions
 Every command in the README and QUICKSTART uses paths relative to the project root. No "navigate to the contracts folder" — show the exact command.
@@ -205,7 +205,7 @@ When the Packager completes, it reports:
 │              📦 Packager — Project Assembled                 │
 │─────────────────────────────────────────────────────────────│
 │  Project:       [project-name]                              │
-│  Location:      content/packaged/[project-name]/            │
+│  Location:      z_FACTORIES/NN_[project-name]/            │
 │  Files:         [N] files in [M] directories                │
 │─────────────────────────────────────────────────────────────│
 │  README.md      ✅ Complete (setup, usage, deploy, security) │
@@ -214,7 +214,7 @@ When the Packager completes, it reports:
 │  project.json   ✅ Full pipeline manifest                    │
 │  Source files   ✅ [N] contracts, [N] tests, [N] scripts     │
 │─────────────────────────────────────────────────────────────│
-│  To use:        cd content/packaged/[project-name]          │
+│  To use:        cd z_FACTORIES/NN_[project-name]          │
 │                 cat QUICKSTART.md                           │
 │                 [install command]                           │
 ╰─────────────────────────────────────────────────────────────╯
@@ -225,7 +225,7 @@ When the Packager completes, it reports:
 - It is the final agent in the pipeline — after Packager, the project is ready to ship.
 - If the Bootstrap Prompt generated files with `=== FILE:` markers, the Packager extracts each file and places it in the correct directory.
 - The Packager does not modify file contents — it only organizes and documents.
-- The packaged project goes to `content/packaged/[project-name]/` — separate from drafts and published.
+- The packaged Factory goes to `z_FACTORIES/NN_[project-name]/` — at the bottom of the workspace, always discoverable.
 
 ## Forbidden
 - ❌ Never modify file contents — organize only
