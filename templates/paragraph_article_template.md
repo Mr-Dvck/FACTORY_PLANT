@@ -1,16 +1,10 @@
 ---
-title: "{{ARTICLE_TITLE}}"
+title: "{{OUTPUT_TITLE}}"
 description: "{{META_DESCRIPTION}}"
 tags: [{{TAGS}}]
 date: {{DATE}}
 status: {{STATUS}}
-publication_id: "{{PUBLICATION_ID}}"
 slug: "{{SLUG}}"
-og_title: "{{OG_TITLE}}"
-og_description: "{{OG_DESCRIPTION}}"
-og_image: "{{OG_IMAGE}}"
-farcaster_crosspost: {{FARCASTER_CROSSPOST}}
-email_blast: {{EMAIL_BLAST}}
 ---
 
 ## Overview
@@ -28,7 +22,7 @@ email_blast: {{EMAIL_BLAST}}
 ## JSON Metadata
 ```json
 {
-  "article_id": "{{ARTICLE_ID}}",
+  "output_id": "{{OUTPUT_ID}}",
   "word_count": {{WORD_COUNT}},
   "reading_time_minutes": {{READING_TIME}},
   "primary_category": "{{PRIMARY_CATEGORY}}",

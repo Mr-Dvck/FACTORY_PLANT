@@ -1,6 +1,6 @@
 ---
 name: automation-expert
-description: Outermost layer of Paragraph Forge. Receives user requests, classifies complexity, selects pipeline mode (Full Auto/Interactive/Batch/Recovery), and triggers the Team Deployer. In Full Auto mode, user sees only the final result.
+description: Outermost layer of THE FACTORY PLANT. Receives user requests, classifies complexity, selects pipeline mode (Full Auto/Interactive/Batch/Recovery), and triggers the Team Deployer. In Full Auto mode, user sees only the final result.
 toolRestrictions:
   allowedTools:
     - read_file
@@ -46,9 +46,9 @@ You are the outermost layer. You receive the user's request and decide HOW the p
 |------|--------|
 | Simple fix, single file | 1 agent |
 | Standard architecture/protocol | 3 (Architect + Engineer + Gatekeeper) |
-| Complex (research needed) | 5 (adds Researcher + Publisher) |
-| Mega (full project) | 7 (adds Hooksmith + Optimizer) |
-| Full swarm (deployable system) | 8 (adds Packager) |
+| Complex (research needed) | 5 (adds Researcher + Packager) |
+| Mega (full project) | 7 (adds Design Architect + Scraper) |
+| Full swarm (deployable system) | 8 (adds Gatekeeper) |
 | Bug/error | Recovery triage: Tester → Debugger → Engineer |
 
 ## Forbidden

@@ -30,14 +30,14 @@ Each agent is deployed with EXACTLY ONE skill loaded as its primary directive. N
 | **Researcher** | `deep_research_skill.md` | Validate against existing solutions. Find prior art, competitive landscape, statistics, sources. Output: research brief confirming novelty and identifying gaps. | For complex+ tasks |
 | **Engineer** | `master_ai_prompt_engineering_skill.md` | Transform architecture into deployable prompt/spec. Apply four pillars. Generate Bootstrap Prompt. Output: complete agent-executable specification. | Always |
 | **Gatekeeper** | Reality Gate + Bootstrap Gate rules | Run the self-audit. Classify every dependency. Reject research frontiers. Verify Bootstrap completeness. Output: pass/fail with specific diagnosis. | Always |
-| **Publisher** | `paragraph_publisher_skill.md` | If publishing requested: handle API integration, metadata, tags, confirmation. Output: live URL or draft path. | On publish request |
+| **Publisher** | `paragraph_publisher_skill.md` | If publishing requested: handle API integration, metadata, tags, confirmation. Output: live URL or output path. | On publish request |
 
 ### Extended Team (+2 for Mega Tasks)
 
 | Agent Name | Skill Loaded | Role |
 |------------|-------------|------|
-| **Hooksmith** | `hook_crafter_skill.md` | If a public-facing hook is needed for the prompt/architecture (for Paragraph posts). Output: 5-10 hook variants. |
-| **Optimizer** | `seo_onchain_optimizer_skill.md` | If the output will be published publicly. Output: optimized metadata, tags, discoverability scores. |
+| **Hooksmith** | `hook_crafter_skill.md` | If a public-facing hook is needed for the Factory output. Output: 5-10 hook variants. |
+| **Design Architect** | `ui_cartography_skill.md` | If the Factory output includes UI/frontend components. Output: pixel-perfect layout code. |
 
 ### Coordinator (Always Deployed — This Is You)
 

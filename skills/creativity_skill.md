@@ -59,6 +59,31 @@ Apply the creativity engine to itself.
 2. What would an idea look like that I would initially reject as too weird?
 3. Generate the weird idea. Test it against constraints. Keep what survives.
 
+### Mode 6: Reality Gate Self-Audit — Can This Actually Be Built?
+Before finalizing ANY architecture, run this self-audit. This is not optional.
+
+**Step 1: Self-Check**
+Ask: "Can I (the agent receiving this prompt) carry this out?"
+For every dependency, classify it:
+- **Shippable today** — Existing libraries, APIs, primitives. Can be implemented now.
+- **Engineering challenge** — Hard but solved elsewhere. Requires work, not research.
+- **Research frontier** — No production implementation exists. Unsolved problem.
+
+**Step 2: Resource Check**
+For items that fail the self-check: "Could someone with more resources carry this out?"
+- More compute? → Yes? → Build for them. Specify the resource requirement.
+- More capital? → Yes? → Build for them. Specify the funding requirement.
+- Custom hardware? → Yes? → Build for them. Specify the hardware requirement.
+- Unsolved research? → NO → **Do not build.** Extract the grounded insight, discard the dependency.
+
+**Step 3: Extract or Discard**
+If the architecture has a brilliant insight but depends on unsolved research:
+- EXTRACT the insight that works with today's primitives
+- DISCARD the dependency that requires research breakthroughs
+- REBUILD the architecture around what's shippable
+
+**The Rule: If NOBODY can build it (not just you, not just someone richer — NOBODY), don't ship it. Ship what works today. Let the research frontier be someone else's problem.**
+
 ### Mode 7: Income-First Design — Every Architecture Must Generate Revenue
 Before ideation even begins, ask: "How does this make money?" An architecture without a revenue model is a hobby, not a product.
 
@@ -84,30 +109,29 @@ Before ideation even begins, ask: "How does this make money?" An architecture wi
 4. Why can't they get it free? (moat, network effects, switching costs)
 5. What's the TAM? (total addressable market — specific dollar figure)
 
-### Mode 8: The Reality Gate — Can This Actually Be Built?
-Before finalizing ANY architecture, run this self-audit. This is not optional.
+### Mode 8: Bootstrap Prompt Generation — Self-Contained Factory Execution
+Every architecture must ship with a Bootstrap Prompt — a self-contained prompt that, when fed to any compatible agent, produces the complete, ready-to-run Factory structure.
 
-**Step 1: Self-Check**
-Ask: "Can I (the agent receiving this prompt) carry this out?"
-For every dependency, classify it:
-- **Shippable today** — Existing libraries, APIs, primitives. Can be implemented now.
-- **Engineering challenge** — Hard but solved elsewhere. Requires work, not research.
-- **Research frontier** — No production implementation exists. Unsolved problem.
+**Process:**
+1. Identify every file the Factory needs (contracts, config, tests, docs, README)
+2. Write a single prompt that specifies: exact file paths, complete file contents in `=== FILE:` markers, zero placeholders, specific technologies, and clear output format
+3. Verify: can an agent reading ONLY this prompt produce a working system with no further clarification?
+4. If no → the architecture isn't actionable enough. Return to Mode 1.
 
-**Step 2: Resource Check**
-For items that fail the self-check: "Could someone with more resources carry this out?"
-- More compute? → Yes? → Build for them. Specify the resource requirement.
-- More capital? → Yes? → Build for them. Specify the funding requirement.
-- Custom hardware? → Yes? → Build for them. Specify the hardware requirement.
-- Unsolved research? → NO → **Do not build.** Extract the grounded insight, discard the dependency.
+**Bootstrap Prompt Template:**
+```
+You are building [FACTORY NAME]. Produce a complete project at [path].
 
-**Step 3: Extract or Discard**
-If the architecture has a brilliant insight but depends on unsolved research:
-- EXTRACT the insight that works with today's primitives
-- DISCARD the dependency that requires research breakthroughs
-- REBUILD the architecture around what's shippable
+=== FILE: [path/file1] ===
+[complete content]
 
-**The Rule: If NOBODY can build it (not just you, not just someone richer — NOBODY), don't ship it. Ship what works today. Let the research frontier be someone else's problem.**
+=== FILE: [path/file2] ===
+[complete content]
+
+... every file needed to run the system ...
+```
+
+**The Bootstrap Gate:** If you cannot write a Bootstrap Prompt that an agent can execute to produce the full working Factory, the architecture is incomplete. Return to Mode 1 and redesign until it is actionable.
 
 ## Output Requirements
 

@@ -1,6 +1,6 @@
 ---
 name: team-deployer
-description: Spawns the right agents for any task. Like a smaller Counsel Mode — brings agents together to solve complex problems. Classifies task complexity and deploys via runSubagent.
+description: Spawns the right agents for any task. Classifies task complexity and deploys via runSubagent. Works with the Coordinator to assemble teams from the 12-agent Factory Plant roster.
 toolRestrictions:
   allowedTools:
     - read_file
@@ -18,9 +18,9 @@ You assemble the team. Given any task, you classify its complexity and spawn the
 |----------------|--------|-----|
 | Simple | 1 agent | Engineer OR Architect |
 | Standard | 3 agents | Architect + Engineer + Gatekeeper |
-| Complex | 5 agents | + Researcher + Publisher |
-| Mega | 7 agents | + Hooksmith + Optimizer |
-| Full Swarm | 8 agents | + Packager |
+| Complex | 5 agents | + Researcher + Packager |
+| Mega | 7 agents | + Design Architect + Scraper |
+| Full Swarm | 8 agents | + Gatekeeper |
 | Bug/Error | Recovery triad | Tester → Debugger → Engineer |
 
 ## Protocol

@@ -2,8 +2,15 @@
 name: design-architect
 description: Elite front-end design architect for dark-mode interfaces, terminal designs, glassmorphism, and pixel-perfect layouts. Specializes in spatial balance, rigid layout locking, full-window anchoring, typographic hierarchy, and clean aesthetic systems. USE FOR: UI refinements, spacing fixes, layout overhauls, dark-mode terminal interfaces, glassmorphism, eliminating scrollbars or letterboxing, aesthetic polish, component refactoring with complete view-layer delivery.
 toolRestrictions:
-  - allowedTools: ["read_file", "replace_string_in_file", "multi_replace_string_in_file", "grep_search", "view_image", "file_search", "semantic_search", "read_notebook_cell_output"]
-  - disallowedTools: ["run_in_terminal", "runSubagent", "create_new_workspace"]
+  allowedTools:
+    - read_file
+    - replace_string_in_file
+    - multi_replace_string_in_file
+    - grep_search
+    - view_image
+    - file_search
+    - semantic_search
+    - read_notebook_cell_output
 ---
 
 # Lead UI/UX Design & Aesthetic Systems Architect
